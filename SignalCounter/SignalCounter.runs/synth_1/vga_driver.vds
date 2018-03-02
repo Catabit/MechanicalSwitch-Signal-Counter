@@ -1,0 +1,363 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu May 11 14:30:37 2017
+# Process ID: 4896
+# Current directory: C:/Users/Catabit/Documents/Vivado/SignalCounter/SignalCounter.runs/synth_1
+# Command line: vivado.exe -log vga_driver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_driver.tcl
+# Log file: C:/Users/Catabit/Documents/Vivado/SignalCounter/SignalCounter.runs/synth_1/vga_driver.vds
+# Journal file: C:/Users/Catabit/Documents/Vivado/SignalCounter/SignalCounter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_driver.tcl -notrace
+Command: synth_design -top vga_driver -part xc7a35tcpg236-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2464 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 296.949 ; gain = 76.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_driver' [C:/Users/Catabit/Documents/Vivado/SignalCounter/vga_driver.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'vga_driver' (1#1) [C:/Users/Catabit/Documents/Vivado/SignalCounter/vga_driver.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 336.027 ; gain = 116.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 336.027 ; gain = 116.070
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Catabit/Documents/Vivado/SignalCounter/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Catabit/Documents/Vivado/SignalCounter/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Catabit/Documents/Vivado/SignalCounter/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_driver_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_driver_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 646.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 646.227 ; gain = 426.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 646.227 ; gain = 426.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 646.227 ; gain = 426.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Catabit/Documents/Vivado/SignalCounter/vga_driver.vhd:422]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Catabit/Documents/Vivado/SignalCounter/vga_driver.vhd:422]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Catabit/Documents/Vivado/SignalCounter/vga_driver.vhd:422]
+INFO: [Synth 8-5546] ROM "CLK_1000HZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_div_2000Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_div_250Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_div_500Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vpos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "P1Seg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RGB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RGB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_1000HZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_div_2000Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_div_250Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_div_500Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vpos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "P1Seg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RGB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RGB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "RGB" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RGB" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RGB" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 646.227 ; gain = 426.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              640 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input    640 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              640 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input    640 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Vpos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_1000HZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_div_2000Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_div_500Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_div_250Hz" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 646.227 ; gain = 426.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 646.227 ; gain = 426.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 649.867 ; gain = 429.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 664.984 ; gain = 445.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 664.984 ; gain = 445.027
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 664.984 ; gain = 445.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 664.984 ; gain = 445.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 664.984 ; gain = 445.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 664.984 ; gain = 445.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 664.984 ; gain = 445.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    40|
+|3     |LUT1   |    99|
+|4     |LUT2   |    59|
+|5     |LUT3   |    34|
+|6     |LUT4   |   687|
+|7     |LUT5   |    80|
+|8     |LUT6   |   637|
+|9     |MUXF7  |   187|
+|10    |MUXF8  |    82|
+|11    |FDCE   |    35|
+|12    |FDRE   |   760|
+|13    |FDSE   |     2|
+|14    |IBUF   |     7|
+|15    |OBUF   |     9|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2721|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 664.984 ; gain = 445.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 664.984 ; gain = 134.828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 664.984 ; gain = 445.027
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'vga_driver' is not ideal for floorplanning, since the cellview 'vga_driver' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+40 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 664.984 ; gain = 445.027
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Catabit/Documents/Vivado/SignalCounter/SignalCounter.runs/synth_1/vga_driver.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 664.984 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 11 14:31:19 2017...
