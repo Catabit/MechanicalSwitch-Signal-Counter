@@ -8,10 +8,10 @@ Software tehniques exist to bypass this by using two timed measurements on the s
 
 The code (vga_driver.vhd - name stayed this way from a previous project on VGA output) was uploaded on a Basys 3, Artix-7 FPGA and a on-board two position switch was used in testing.
 
-Video:
-
-https://youtu.be/b2KWymsdrEA
+Video from different states of development (last is latest). The mentioned 'switch bounce' can be clearly seen as short pulses before/after the big, manual switch actuation. In detail snapshots are uploaded separatly on this repo.
 
 https://youtu.be/2LrTjuaM_Jo
 
 https://youtu.be/EnODc7bOqkk
+
+https://youtu.be/b2KWymsdrEA
